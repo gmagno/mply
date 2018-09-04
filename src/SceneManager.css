@@ -1,0 +1,33 @@
+.SceneMgr-div {
+    background-color: lightsalmon;
+    /* overflow: auto; */
+    /* width: 100%; */
+    height: 100%;
+}
+
+.fab {
+    /* THE `position` SET TO absolute IS THE IMPORTANT BIT!! */
+    position: absolute;
+    bottom: 100px;
+    /* width: 100%; */
+    border: 0px;
+    z-index: 2000;
+    margin: 0px;
+    /* top: auto; */
+    right: -100px;
+    /* left: auto; */
+}
+
+.bgimg {
+    width: 500px;
+    height: 500px;
+    background-image: url('https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350');
+}
+
+#button-wrapper {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    border: 0px solid red;
+    z-index: 2000;
+}

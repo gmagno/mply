@@ -1,0 +1,30 @@
+{
+  "recommendations": [
+    // general
+    "visualstudioexptteam.vscodeintellicode",
+    "christian-kohler.path-intellisense",
+    "2gua.rainbow-brackets",
+    "oderwat.indent-rainbow",
+    "EditorConfig.EditorConfig",
+    "ms-vsliveshare.vsliveshare",
+    "robertohuertasm.vscode-icons",
+    "shardulm94.trailing-spaces",
+    // git
+    "eamodio.gitlens",
+    // js
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.jquerysnippets",
+    // html + css + sass
+    "formulahendry.auto-close-tag",
+    "zignd.html-css-class-completion",
+    "robinbentley.sass-indented",
+    "hwencc.html-tag-wrapper",
+    "pranaygp.vscode-css-peek",
+    // babel
+    "joshpeng.sublime-babel-vscode",
+    // docker
+    "peterjausovec.vscode-docker",
+    // .env
+    "mikestead.dotenv",
+  ]
+}

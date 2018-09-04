@@ -1,0 +1,16 @@
+version: '3.6'
+
+services:
+
+  webapp:
+    container_name: mply-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - './src:/home/node/webapp/src'
+      - './public:/home/node/webapp/public'
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development

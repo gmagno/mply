@@ -1,0 +1,20 @@
+FROM node:9.9.0 as builder
+
+RUN mkdir /home/node/webapp/
+WORKDIR /home/node/webapp/
+# in a real production environment the following copy should be replaced by
+# a git clone
+COPY . .
+RUN npm install --silent
+RUN npm install --slient -g serve
+RUN npm run build
+
+# production environment
+FROM nginx:1.13.10-alpine
+RUN rm -rf /usr/share/nginx/html/*
+COPY --from=builder /home/node/webapp/build/ /usr/share/nginx/html/
+RUN rm -rf /etc/nginx/conf.d/*
+COPY webapp.conf /etc/nginx/conf.d/
+EXPOSE 9090
+
+CMD ["nginx", "-g", "daemon off;"]
